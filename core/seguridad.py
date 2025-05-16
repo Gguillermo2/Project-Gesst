@@ -5,12 +5,14 @@ from cryptography.fernet import Fernet
 
 from Modelo.models import AdminUser
 
-Admin = AdminUser
+
+
+# generacion de uatenticacion  
+def encriptador(): 
+    print("mejoraremos")
 
 
 # Funciones para generar usuario y Contraseña maestras
-
-
 def generar_Admin():
     NombreAdmin = input("Ingrese su nombre de usuario: ")
     password = getpass.getpass("Ingrese su contraseña: ")
@@ -22,13 +24,13 @@ def generar_Admin():
         ContresañUser = password
 
     )
-
+    
     return nuevoadmin
 
 
-usuario = generar_Admin()
 
-print(f"el usuario es {usuario}")
+
+
 
 
 
