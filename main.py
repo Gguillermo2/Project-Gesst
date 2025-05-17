@@ -1,8 +1,9 @@
-from core import seguridad
+from core import autenticacion
 
 def main():
-        usuario = seguridad.generar_Admin()
+        usuario = autenticacion.generar_Admin()
         print(f"El usuario generado es {usuario}")
+
 
 if __name__ == "__main__":
         main()
